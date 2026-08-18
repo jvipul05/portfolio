@@ -1,0 +1,1 @@
+TODO: Place Vipul Jain's production resume PDF at public/resume.pdf so /resume.pdf download links resolve to the final document.

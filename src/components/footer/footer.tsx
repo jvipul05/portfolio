@@ -1,0 +1,2 @@
+import { profileLinks } from "@/data/portfolio";
+export function Footer(){return <footer className="border-t border-slate-900 px-4 py-10"><div className="container flex flex-col gap-4 text-sm text-slate-400 md:flex-row md:items-center md:justify-between"><div><p className="font-semibold text-white">Designed &amp; Built by Vipul Jain</p><p>Building systems. Solving problems. Learning continuously.</p></div><div className="flex flex-wrap gap-3">{profileLinks.map(l=><a key={l.label} href={l.href} className="hover:text-white">{l.label}</a>)}</div></div></footer>}
