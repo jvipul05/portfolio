@@ -1,0 +1,4 @@
+"use client";
+import { motion } from "framer-motion";
+import { ArrowDown, ArrowRight } from "lucide-react";
+export function ArchitectureFlow({ nodes, horizontal=false }: { nodes: string[]; horizontal?: boolean }) { return <div className={horizontal?"flex min-w-max items-center gap-3":"flex flex-col items-center gap-3"}>{nodes.map((node,i)=><div key={node} className={horizontal?"flex items-center gap-3":"flex flex-col items-center gap-3"}><motion.div whileHover={{scale:1.04}} className="rounded-2xl border border-slate-700/80 bg-slate-950/80 px-4 py-3 text-center text-sm font-medium text-slate-100 shadow-xl shadow-black/20">{node}</motion.div>{i<nodes.length-1&&<motion.span animate={{opacity:[.35,1,.35]}} transition={{duration:1.8,repeat:Infinity,delay:i*.12}} className="text-sky-300">{horizontal?<ArrowRight size={18}/>:<ArrowDown size={18}/>}</motion.span>}</div>)}</div>; }
