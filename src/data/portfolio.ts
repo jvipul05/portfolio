@@ -1,7 +1,7 @@
 import { Bot, Braces, Cloud, Code2, Database, GitBranch, Layers, Network, Server, Zap } from "lucide-react";
 import type { Article, Experience, LinkItem, NavItem, Project, SkillCategory } from "@/types";
 export const navItems: NavItem[] = [{label:"Home",href:"#home"},{label:"About",href:"#about"},{label:"Experience",href:"#experience"},{label:"Projects",href:"#projects"},{label:"System Design",href:"#system-design"},{label:"AI Engineering",href:"#ai-engineering"},{label:"Contact",href:"#contact"}];
-export const profileLinks: LinkItem[] = [{label:"GitHub",href:"https://github.com/Vipuljain05"},{label:"LinkedIn",href:"https://www.linkedin.com/in/vipul-jain-05"},{label:"LeetCode",href:"https://leetcode.com/u/Vipuljain05/"},{label:"Email",href:"mailto:vipuljain05@example.com"}];
+export const profileLinks: LinkItem[] = [{label:"GitHub",href:"https://github.com/Vipuljain05"},{label:"LinkedIn",href:"https://www.linkedin.com/in/vipul-jain-05"},{label:"LeetCode",href:"https://leetcode.com/u/Vipuljain05/"},{label:"Email",href:"#contact"}];
 export const skillCategories: SkillCategory[] = [
 {title:"Backend",icon:Server,items:["Java","Spring Boot","Hibernate","JPA","REST APIs","Microservices"]},{title:"Database",icon:Database,items:["PostgreSQL","MySQL","MongoDB","Prisma"]},{title:"Infrastructure",icon:Cloud,items:["Docker","Kubernetes","AWS","Nginx","CI/CD"]},{title:"Messaging / Performance",icon:Zap,items:["Redis","BullMQ","Async Processing","Caching"]},{title:"Frontend",icon:Code2,items:["React","Next.js","TypeScript","Tailwind CSS"]},{title:"AI Engineering",icon:Bot,items:["Agentic AI","LLMs","AI-assisted development","Prompt Engineering","SDD","Token optimization","AI coding workflows"]}];
 export const experiences: Experience[] = [
